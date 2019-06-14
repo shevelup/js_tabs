@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>tabs</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+       <div class="main">
+        <div class="wrapper">
+          <div class="tabs">
+              <span class="tab">Вкладка 1</span>
+              <span class="tab">Вкладка 2</span>
+              <span class="tab">Вкладка 3</span>        
+          </div>
+          <div class="tab_content">
+              <div class="tab_item">
+                 <h2>Вміст вкладки 1</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p> Donec sollicitudin ultricies dignissim.</p> 
+                  <p>Integer at dapibus dui. Pellentesque ac viverra metus.</p> 
+                  <p>Nullam libero dolor, condimentum eget venenatis eget, volutpat at orci.</p>
+                  <p> Praesent vitae venenatis elit.</p> 
+              </div>
+              <div class="tab_item"> 
+                  <h2>Вміст вкладки 2</h2>
+                <p>sgadgwg zsdfbafab ggjmy amet, consectetur adipiscing elit.</p>
+                <p> tytyty zvsvs ultricies dignissim.</p> 
+                <p>gioenee at dapibus dui. Pellentesque ac viverra metus.</p> 
+                <p>zdfnz sasadfa libero dolor, condimentum eget venenatis eget, volutpat at orci.</p>
+                <p> piopuy zxv savadv elit.</p> </div>
+              <div class="tab_item">
+                  <h2>Вміст вкладки 3</h2>  
+                <p>kfifvmkf ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p> iloitep ttuiyiuyiy asetrtrt dignissim.</p> 
+                <p>n[an] at dapibus dui. wwbn ac viverra metus.</p> 
+                <p>d.lkjld libero dolor, sthrth eget venenatis eget, volutpat at orci.</p>
+                <p> dthety vitae czfsg elit.</p> </div>
+          </div>
+      </div>
+        
+        
+      </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+      <script>
+  $(".tab_item").not(":first").hide();
+$(".wrapper .tab").click(function() {
+	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+  </script>
+  </body>
+</html>
